@@ -4,14 +4,19 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    int num = 10;
+    bool var1=true;
+    bool var2=true;
 
 
-    /* when we use && its meaning that both of the alternatives have to be true */
-    /* when we want to use the NOT, its necessary to use "||" */
-    if((num%2 == 0) && num<20);
+
+    if(var1 && var2)
     {
-        cout << "numero par e menor do que 20";
+        cout << "Learning C++"<<endl;
     }
+
+    /*
+   Learning the conditional of bool with AND and OR
+    }
+    */
     return 0;
 }
