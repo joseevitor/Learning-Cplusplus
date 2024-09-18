@@ -4,19 +4,53 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    bool var1=true;
-    bool var2=true;
+    int num1, num2, result;
+    char op; // operation
+    float div;
 
 
 
-    if(var1 && var2)
+    cout << "Type the first number!";
+    cin >> num1;
+    cout << "Type the second number!";
+    cin >> num2;
+    cout << "type the operation: ";
+    cin >> op;
+
+    switch(op)
     {
-        cout << "Learning C++"<<endl;
+    case '+':
+        result = num1 +num2;
+        cout << "Sum: " << result << endl;
+        break;
+    case '-':
+        result = num1 - num2;
+        cout << "Subtraction: " << result << endl;
+        break;
+    case '*':
+        result = num1 * num2;
+        cout << "Multiplication: " << result << endl;
+        break;
+    case '/':
+        if(num2 != 0)
+        {
+            div = (float)num1 / num2;
+            cout << "Division: " << result << endl;
+        }
+        else
+        {
+            cout << "Division by zero!" << endl;
+        }
+        result = num1 / num2;
+        cout << "Division: " << result << endl;
+        break;
+
+    default:
+        cout << "Operation non-existent! Try again" << endl;
+        break;
     }
 
-    /*
-   Learning the conditional of bool with AND and OR
-    }
-    */
+
+
     return 0;
 }
